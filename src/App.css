@@ -25,7 +25,7 @@ header {
   justify-content: space-around;
   color: whitesmoke;
   border-bottom: 1px solid rgb(205, 205, 205);
-  padding-bottom: 2rem;
+  padding-bottom: 1.5rem;
 }
 
 .header2 span:hover {
@@ -65,9 +65,19 @@ header {
   justify-content: space-between;
 }
 
+p {
+  color: #ffd27f;
+  text-align: center;
+}
+
+p:hover {
+  color: #ffa500;
+}
+
 .items:hover {
   cursor: pointer;
-  border-bottom: 1px solid #ffdea2; 
+  border-bottom: 1px solid #ffdea2;
+  
 }
 
 .items img {
@@ -76,7 +86,7 @@ header {
 
 .sconto {
   color: #000000;
-  background: linear-gradient(0.25turn,rgb(209, 255, 123), #000000);
+  background: linear-gradient(0.25turn,#d1ff7b, #000000);
 }
 
 .stelle {

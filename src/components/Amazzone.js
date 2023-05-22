@@ -45,11 +45,12 @@ export default function Amazzone() {
                     {products.products.map((el) =>
                     (
                         <div className="items" key={el.id}>
-                            <img src={el.thumbnail} width="100px"></img>
+                            <img src={el.thumbnail} alt="thumbnail" width="100px"></img>
                             <h4>{el.title}</h4>
                             <h3>{el.price}€</h3>
-                            <span className="sconto">Scontato del {el.discountPercentage}!</span>
+                            <span className="sconto">Scontato del {el.discountPercentage}%!</span>
                             <span className="stelle">{el.rating} stelle</span>
+                            <p className="add">Aggiungi al Carrello</p> 
                         </div>
                     )
                     )}
