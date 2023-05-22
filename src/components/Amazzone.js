@@ -1,7 +1,11 @@
+
 import { useState, useEffect } from "react"
 
 export default function Amazzone() {
     const [products, setProducts] = useState([])
+    // const [search, setSearch] = useState("")
+    // const [found, setFound] = useState([]);
+
     useEffect(() => {
         async function fetchproduct() {
             let res = await fetch('https://dummyjson.com/products')
@@ -20,7 +24,10 @@ export default function Amazzone() {
                         width="132px"
                         height="70px"
                         alt="logo" />
-                    <input placeholder="Cerca su Amazzone" />
+                    <input placeholder="Cerca su Amazzone"
+                        // value={search}
+                        // onChange={(e) => setSearch(e.target.value)}
+                    />
                     <img src="https://thumbs.dreamstime.com/b/shopping-icon-shopping-cart-icon-dark-background-simple-vector-icon-shopping-icon-shopping-cart-icon-dark-background-116659167.jpg"
                         height="60px" />
                 </div>
