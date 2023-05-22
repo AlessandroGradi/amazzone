@@ -1,38 +1,99 @@
-.App {
-  text-align: center;
+* {
+  background-color: black;
+  color: white;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+  background-color: black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header1 {
+  display: flex;
+  justify-content: space-between;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header1 img:last-child:hover {
+  border-left: 3px dotted whitesmoke;
+  border-bottom: 3px solid orange;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.header2 {
+  display: flex;
+  justify-content: space-around;
+  color: whitesmoke;
+  border-bottom: 1px solid rgb(205, 205, 205);
+  padding-bottom: 2rem;
+}
+
+.header2 span:hover {
+  color: #ffdea2;
+  cursor: pointer;
+}
+
+.header1 input {
+  height: 25px;
+  align-self: center;
+  border-bottom: 2px solid #ffd27f;
+  border-radius: 5px;
+  background-color: #242424;
+  color: whitesmoke;
+}
+
+.header1 input:focus {
+  outline: none;
+  border-bottom: 3px solid #ffa500;
+  align-self: center;
+  width:400px;
+}
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #0c0c0c;
+}
+
+.items {
+  background-color: #000000;
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+.items:hover {
+  cursor: pointer;
+  border-bottom: 1px solid #ffdea2; 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.items img {
+  margin-bottom: 10px;
+}
+
+.sconto {
+  color: #000000;
+  background: linear-gradient(0.25turn,rgb(209, 255, 123), #000000);
+}
+
+.stelle {
+  color:#ffdea2;
+  margin-bottom: 2rem;
+
+}
+
+main {
+  background-color: #5b5b5b;
+}
+
+h4 {
+  font-weight: 300;
+}
+
+h4, h3 {
+  margin: 0;
+  padding: 0;
 }
