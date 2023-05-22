@@ -49,8 +49,9 @@ header {
   width:400px;
 }
 
-.boxes {
+.box {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   background-color: #0c0c0c;
 }
@@ -90,9 +91,9 @@ p:hover {
 }
 
 .stelle {
-  color:#ffdea2;
+  color:#ffe6b8;
   margin-bottom: 2rem;
-
+  font-size: 14px;
 }
 
 main {

@@ -41,7 +41,7 @@ export default function Amazzone() {
                 </div>
             </header>
             <main>
-                <div className="boxes">
+                <div className="box">
                     {products.products.map((el) =>
                     (
                         <div className="items" key={el.id}>
@@ -49,7 +49,7 @@ export default function Amazzone() {
                             <h4>{el.title}</h4>
                             <h3>{el.price}€</h3>
                             <span className="sconto">Scontato del {el.discountPercentage}%!</span>
-                            <span className="stelle">{el.rating} stelle</span>
+                            <span className="stelle">{el.rating} stelle su 5</span>
                             <p className="add">Aggiungi al Carrello</p> 
                         </div>
                     )
